@@ -1,0 +1,61 @@
+{
+  "titulo": "Equipos de Dissidia",
+  "ciudad": "Buenos Aires",
+  "anio": 2019,
+  "active": true,
+  "Guerrero": [{
+      "nombre": "Thiago",
+      "edad": 17,
+      "ubicacion": "Plaza Devoto.",
+
+      "urlMapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3284.243765462373!2d-58.51056268519545!3d-34.59799696470157!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb634b14e29df%3A0xa7bd6a619d77ab61!2sPlaza%20Devoto!5e0!3m2!1ses-419!2sar!4v1576260590287!5m2!1ses-419!2sar",
+      "urlImagen":"ec2e62e511a4018597c2b59fdb5ff522.jpg",
+      "especialidades": [
+        "ruleta",
+        "corte de luz",
+        "aniquilacion",
+        "furia"
+      ]
+    },
+    {
+      "nombre": "Bruno",
+      "edad": 15,
+      "ubicacion": "Area 50.",
+      "urlMapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.28023317834!2d-58.54050678519463!3d-34.62235796599074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb7e20a29edb5%3A0x46f8cdbf282296da!2sEscuela%20N%C2%BA%2050%20Padre%20Carlos%20Mugica!5e0!3m2!1ses-419!2sar!4v1576260765297!5m2!1ses-419!2sar",
+      "urlImagen":"473f871cabcdfe4e2ee1c6d81512b3d12aa83bab_00.jpg",
+      "especialidades": [
+        "Kagune",
+        "Entrenador PK",
+        "Transformacion En TITAN",
+        "Habilidad Sendokai",
+        "Parpadeo"
+      ]
+    },
+    {
+      "nombre": "Bianca",
+      "edad": 12,
+      "ubicacion": "KIMOCHI.",
+      "urlMapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3282.73428733633!2d-58.555731385194086!3d-34.636154466721216!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca0a503a4677%3A0xe9541de814c269a7!2sKIMOCHI%20Cosplays!5e0!3m2!1ses-419!2sar!4v1576260402915!5m2!1ses-419!2sar",
+      "urlImagen":"Ilustracion_de_Bel_N2_B2.webp",
+      "especialidades": [
+        "Analisis",
+        "Hielo++",
+        "Lost Song",
+        "Invocaion"
+      ]
+    },
+    {
+    "nombre": "Elias",
+    "edad": 25,
+    "ubicacion": "Iglesia avangelica presbiteliana unica luz.",
+    "urlMapa": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1380.4409361796431!2d-58.536864556532585!3d-34.62286010292242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc81e0bed98d5%3A0x4473d1b733e7b4fb!2sIglesia%20Han%20Bit%20Presbiteriana%20Coreana!5e0!3m2!1ses-419!2sar!4v1576260944395!5m2!1ses-419!2sar",
+    "urlImagen":"4164300_640px.jpg",
+    "especialidades": [
+      "Habilidad Enemiga",
+      "Sentir",
+      "Puño Certero",
+      "piro++"
+    ]
+    }
+  ]
+}

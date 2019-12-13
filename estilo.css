@@ -1,0 +1,58 @@
+
+
+html {
+  font-family: 'Times New Roman', helvetica, arial, sans-serif;
+  font-weight: bold;
+
+}
+
+body {
+  width: 900px;
+  max-width: 100%;
+  background: red;
+  margin:0 auto;
+  background: url(21591.jpg)  center top;
+
+}
+
+h1, h2 {
+  font-family: 'Courier New';
+  line-height: 90%;
+  text-decoration: underline;
+
+}
+
+/* header styles */
+
+h1 {
+  font-size: 8rem;
+  text-align: center;
+}
+
+header p {
+  font-size: 2rem;
+  text-align: center;
+  line-height: 0%;
+}
+
+/* section styles */
+
+section article {
+  width: 33;
+}
+
+section p {
+font-size: 2rem;
+  margin: 5px 0;
+}
+
+section ul {
+  font-size: 1.8rem;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 6rem;
+  letter-spacing: -2.6px;
+  margin-bottom: 10px;
+}

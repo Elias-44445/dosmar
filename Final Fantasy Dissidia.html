@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="descripcion" content="Esta es una web de gremios de Final Fantasy."/>
+  <meta name="keywords" content="Guerreros, Equipos, Soldados, Soldados, Guerreros, mejores Guerreros, mejores Guerreros buenos aires"/>
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <title>Equipos Dissidia</title>
+
+  <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+  <header>
+
+  </header>
+
+  <section>
+
+  </section>
+
+  <script>
+    var header = document.querySelector('header');
+    var section = document.querySelector('section');
+
+    var request = new XMLHttpRequest();
+    request.open('GET', "mc.json");
+    request.responseType = 'text';
+    request.send();
+    request.onload = function() {
+      var superHeroesText = request.response;
+      var superHeroes = JSON.parse(superHeroesText);
+      populateHeader(superHeroes);
+      mostrarGuerreros(superHeroes);
+    }
+
+    function populateHeader(jsonObj) {
+      var myH1 = document.createElement('h1');
+      myH1.textContent = jsonObj['titulo'];
+      header.appendChild(myH1);
+      var myPara = document.createElement('p');
+      myPara.textContent = 'Ciudad: ' + jsonObj['ciudad'] + ', ' + jsonObj['anio'] + ".";
+      header.appendChild(myPara);
+    }
+
+    function mostrarGuerreros(jsonObj) {
+      var Guerrero = jsonObj['Guerrero'];
+      for (var i = 0; i < Guerrero.length; i++) {
+        var myArticle = document.createElement('article');
+        var myH2 = document.createElement('h2');
+        var myPara1 = document.createElement('p');
+        var myPara2 = document.createElement('p');
+        var myPara3 = document.createElement('p');
+        var myList = document.createElement('ul');
+        var iframe = document.createElement('iframe');
+        var imagen = document.createElement("img");
+        iframe.src = Guerrero[i].urlMapa;
+        imagen.src = Guerrero[i].urlImagen;
+        imagen.width = "400";
+        iframe.width = "400";
+        myH2.textContent = Guerrero[i].nombre;
+        myPara1.textContent = 'Ubicación: ' + Guerrero[i].ubicacion;
+        myPara2.textContent = 'Edad: ' + Guerrero[i].edad;
+        myPara3.textContent = 'Especialidades:';
+        var quepuedenHacer = Guerrero[i].especialidades;
+        for (var j = 0; j < quepuedenHacer.length; j++) {
+          var listItem = document.createElement('li');
+          listItem.textContent = quepuedenHacer[j];
+          myList.appendChild(listItem);
+        }
+        myArticle.appendChild(myH2);
+        myArticle.appendChild(myPara1);
+        myArticle.appendChild(myPara2);
+        myArticle.appendChild(myPara3);
+        myArticle.appendChild(myList);
+        myArticle.appendChild(iframe);
+        myArticle.appendChild(imagen);
+        section.appendChild(myArticle);
+      }
+    }
+  </script>
+
+</body>
+
+</html>
